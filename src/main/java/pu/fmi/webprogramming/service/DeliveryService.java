@@ -121,7 +121,7 @@ public class DeliveryService implements DeliveryServiceInterface {
           throw new DeliveryCustomException("Delivery not found");
       }
 
-      //Добавих метод за търсене на куриер по Id в DeliveryRepository
+      //Добавих метод за търсене на куриер по Id в CourierRepository
       Courier courier=courierRepository.findById(courierId);
       if(courier == null) {
           throw new DeliveryCustomException("Courier not found");
